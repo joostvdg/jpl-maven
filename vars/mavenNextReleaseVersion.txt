@@ -1,0 +1,25 @@
+<h1>mavenNextReleaseVersion</h1>
+<p>
+Parses a pom.xml file for the version and strips of <em>-SNAPSHOT</em>
+</p>
+<p>
+Is also used by the <strong>gitNextSemverTagMaven</strong> function, the assumption is that you do not use this function directly.
+</p>
+<br>
+<h2>Arguments</h2>
+<ul>
+    <li><strong>pomFile</strong>: path to the pom xml file to parse</li>
+</ul>
+<br>
+<h2>Requirements</h2>
+<ul>
+    <li>a pom.xml file with a version configured</li>
+    <li>requires <a href="https://wiki.jenkins.io/display/JENKINS/Pipeline+Utility+Steps+Plugin">Pipeline Utility Steps Plugin<a/> to be installed</li>
+</ul>
+<br>>
+<h2>Example</h2>
+<pre>
+<code>
+def nextReleaseVersion = mavenNextReleaseVersion('pom.xml')
+</code>
+</pre>

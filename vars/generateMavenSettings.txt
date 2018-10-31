@@ -1,0 +1,26 @@
+<h1>generateMavenSettings</h1>
+<p>
+Generates a maven settings xml file for doing a maven deploy to a binary repository such as Nexus or Artifactory.
+</p>
+<p>
+It does so by generating matching server configuration for your distributionManagement, with credentials stored in Jenkins.
+</p>
+<br>
+<h2>Arguments</h2>
+<ul>
+    <li><strong>credentialsId</strong>: the credentialsId for authenticating with the binary repository</li>
+    <li><strong>serverId</strong>: the serverId, should match with your distributionManagement id</li>
+</ul>
+<br>
+<h2>Requirements</h2>
+<ul>
+    <li>distributionManagement is configured</li>
+    <li>you have a credentialsId that can be used directly</li>
+</ul>
+<br>
+<h2>Example</h2>
+<pre>
+<code>
+generateMavenSettings('artifactoryPublish', 'staging')
+</code>
+</pre>

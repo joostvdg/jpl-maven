@@ -1,0 +1,21 @@
+<h1>gitNextSemverTagMaven</h1>
+<p>
+Generates the next SemVer tag for your application, based on the current version in your pom.xml and tags in your Git origin remote.
+</p>
+<h2>Arguments</h2>
+<ul>
+    <li><strong>pomFile</strong>: pom xml file to parse for the version</li>
+</ul>
+<br>
+<h2>Requirements</h2>
+<ul>
+    <li>Uses the <a href="https://github.com/joostvdg/jpl-core">jpl-core</a> library for git related functions</li>
+    <li>Assumes your version in your pom is in the following format: Major.Minor-SNAPSHOT (0.1-SNAPSHOT)</li>
+</ul>
+<br>
+<h2>Example</h2>
+<pre>
+<code>
+def nextVersion = gitNextSemverTagMaven('pom.xml')
+</code>
+</pre>
