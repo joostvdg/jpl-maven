@@ -16,7 +16,7 @@ Is also used by the <strong>gitNextSemverTagMaven</strong> function, the assumpt
     <li>a pom.xml file with a version configured</li>
     <li>requires <a href="https://wiki.jenkins.io/display/JENKINS/Pipeline+Utility+Steps+Plugin">Pipeline Utility Steps Plugin<a/> to be installed</li>
 </ul>
-<br>>
+<br>
 <h2>Example</h2>
 <pre>
 <code>
